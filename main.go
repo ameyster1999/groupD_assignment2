@@ -41,7 +41,8 @@ func celsiusToFahrenheit(celsius float64) float64 {
 }
 
 // end of sajjad's code
-// ameens ccde
+// ameens code -500225970
+// this function is to add 2 number
 func add(a, b int) int {
 	return a + b
 }
