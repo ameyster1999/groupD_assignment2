@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"sort"
 	"strings"
 )
 
@@ -28,6 +29,16 @@ func main() {
 	// calling the function
 	celsiusToFahrenheit(celsius)
 	// calling end for sajjad's function
+	// Start of Ramanpreet kaur - 500218959 code
+	// Example usage:
+	arr := []int{3, 5, 7, 2, 6}
+
+	// Call the sortArray function to sort the array
+	sortedArr := sortArray(arr)
+
+	// Print the sorted array
+	fmt.Println("Sorted array:", sortedArr)
+	// End of Ramanpreet kaur - 500218959 code
 
 }
 
@@ -70,3 +81,12 @@ func isEven(number int) string {
 		return "Odd"
 	}
 }
+
+// Created by Ramanpreet kaur - 500218959
+// sortArray sorts an array of integers in ascending order
+func sortArray(arr []int) []int {
+	sort.Ints(arr)
+	return arr
+}
+
+// End of Ramanpreet kaur - 500218959 code
