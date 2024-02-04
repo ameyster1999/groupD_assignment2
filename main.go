@@ -52,7 +52,17 @@ func main() {
 	quotient, remainder := divide(num1, num2)
 	// Print the results
 	fmt.Printf("Quotient: %d, Remainder: %d\n", quotient, remainder) //End of Sindhuja Peravali - 500228575 code
-
+	// Start of Prateek Nandiwada - 500220142 code
+	fmt.Printf("Prateek Nandiwada - 500220142\n")
+	var pnum int
+	fmt.Print("Enter a number: ")
+	fmt.Scan(&pnum)
+	if isPrime(pnum) {
+		fmt.Printf("%d is a prime number.\n", pnum)
+		} else {
+		fmt.Printf("%d is not a prime number.\n", pnum)
+		}
+	// End of Prateek Nandiwada - 500220142 code
 }
 
 // start of sajjad's code
@@ -144,3 +154,18 @@ func divide(dividend, divisor int) (quotient, remainder int) {
 	remainder = dividend % divisor
 	return remainder,quotient
 }
+// Start of Prateek Nandiwada - 500220142 code
+// function to find if a number is prime
+func isPrime(num int) bool {
+if num < 2 {
+	return false
+	}
+limit := int(math.Sqrt(float64(num)))
+for i := 2; i <= limit; i++ {
+	if num%i == 0 {
+	return false
+	}
+}
+return true
+}
+// End of Prateek Nandiwada - 500220142 code
