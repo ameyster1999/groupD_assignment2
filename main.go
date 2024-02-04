@@ -42,6 +42,16 @@ func main() {
 	// start of Rishav's code - 500228178
 	greatestOfThree()
 	// end of Rishav's code - 500228178
+	// Start of Sindhuja Peravali - 500228575 code
+	fmt.Printf("Sindhuja Peravali - 500228575\n") var num1, num2 int
+	// Check for division by zero
+	if num2 == 0 {
+		fmt.Println("Error: Division by zero is not allowed.") return
+	}
+	// Call the function and store the return values
+	quotient, remainder := divide(num1, num2)
+	// Print the results
+	fmt.Printf("Quotient: %d, Remainder: %d\n", quotient, remainder) //End of Sindhuja Peravali - 500228575 code
 
 }
 
@@ -125,4 +135,12 @@ func greatest(a, b, c int) int {
 	} else {
 		return c
 	}
+}
+
+func divide(dividend, divisor int) (quotient, remainder int) {
+	// Calculate the quotient
+	quotient = dividend / divisor
+	// Calculate the remainder
+	remainder = dividend % divisor
+	return remainder,quotient
 }
