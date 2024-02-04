@@ -15,8 +15,8 @@ func main() {
 	fmt.Printf("Enter a number to check if it's even or odd:\n")
 	var num int
 	fmt.Scanln(&num)
-	result := isEven(num)
-	fmt.Printf("%d is %s\n", num, result)
+	result1 := isEven(num)
+	fmt.Printf("%d is %s\n", num, result1)
 	// End of Hammad Ul Hassan - 500230292 code
 
 	//  start calling sajjad's function
@@ -41,10 +41,12 @@ func celsiusToFahrenheit(celsius float64) float64 {
 }
 
 // end of sajjad's code
-
+// ameens ccde
 func add(a, b int) int {
 	return a + b
 }
+
+// start of KiranJeeth kaur
 func revString(str string) string {
 	var theArray []string
 	theArray = strings.Split(str, "")
